@@ -1,7 +1,5 @@
-document.getElementById("loginBtn").addEventListener("click", function () {
-    alert("Login page coming soon!");
-});
+// Wait for 3 seconds and go to the login page
 
-document.getElementById("registerBtn").addEventListener("click", function () {
-    alert("Register page coming soon!");
-});
+setTimeout(() => {
+    window.location.href = "login.html";
+}, 3000);
