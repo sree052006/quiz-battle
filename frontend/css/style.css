@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+
+    height:100vh;
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#0f4c81);
+    background-size:400% 400%;
+
+    animation:bg 10s ease infinite;
+
+}
+
+.container{
+
+    text-align:center;
+    z-index:2;
+
+}
+
+.title{
+
+    color:white;
+
+    font-size:90px;
+
+    letter-spacing:10px;
+
+    animation:zoom 2s ease,
+              glow 2s infinite alternate;
+
+}
+
+.subtitle{
+
+    color:#ddd;
+
+    font-size:28px;
+
+    margin-top:20px;
+
+    opacity:0;
+
+    animation:fade 2s forwards;
+
+    animation-delay:1.8s;
+
+}
+
+/* Floating circles */
+
+.circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    animation:float 8s infinite;
+
+}
+
+.c1{
+
+    width:250px;
+    height:250px;
+
+    left:-60px;
+    top:80px;
+
+}
+
+.c2{
+
+    width:180px;
+    height:180px;
+
+    right:50px;
+    bottom:100px;
+
+}
+
+.c3{
+
+    width:120px;
+    height:120px;
+
+    top:50px;
+    right:250px;
+
+}
+
+@keyframes bg{
+
+0%{
+
+background-position:0% 50%;
+
+}
+
+50%{
+
+background-position:100% 50%;
+
+}
+
+100%{
+
+background-position:0% 50%;
+
+}
+
+}
+
+@keyframes glow{
+
+from{
+
+text-shadow:
+0 0 10px cyan,
+0 0 20px cyan,
+0 0 40px cyan;
+
+}
+
+to{
+
+text-shadow:
+0 0 20px white,
+0 0 40px cyan,
+0 0 80px cyan;
+
+}
+
+}
+
+@keyframes zoom{
+
+from{
+
+opacity:0;
+
+transform:scale(.4);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-30px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}

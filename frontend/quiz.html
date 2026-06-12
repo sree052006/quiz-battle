@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Quiz Battle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="quiz-screen">
+            <div class="qb-header">
+                <span class="qb-category" id="qb-cat">Coding</span>
+                <span class="qb-score">Score: <span id="qb-score">0</span></span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" id="qb-progress"></div></div>
+            <div class="timer-wrap">
+                <div class="timer-bar"><div class="timer-fill" id="timer-fill"></div></div>
+                <div class="timer-num" id="timer-num">10</div>
+            </div>
+            <div class="qnum" id="qb-qnum">Question 1 of 5</div>
+            <div class="question" id="qb-question"></div>
+            <div class="options" id="qb-options"></div>
+        </div>
+
+        <div id="result-screen" style="display:none">
+            <div class="result-msg" id="result-msg"></div>
+            <div class="result-score" id="result-score"></div>
+            <p class="result-label">out of 5 questions</p>
+            <button onclick="location.href='category.html'">Play Again</button>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
