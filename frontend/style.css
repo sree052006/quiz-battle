@@ -1,11 +1,31 @@
 body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+.container{
     text-align:center;
-    font-family:Arial;
-    margin-top:100px;
+    margin-top:150px;
+}
+
+h1{
+    font-size:50px;
+}
+
+p{
+    font-size:20px;
 }
 
 button{
-    padding:10px 20px;
+    padding:12px 30px;
     margin:10px;
+    border:none;
+    border-radius:8px;
     cursor:pointer;
+    font-size:18px;
+}
+
+button:hover{
+    transform:scale(1.05);
 }
